@@ -1,0 +1,25 @@
+There are several methods to handle missing values in a dataset. The choice of method depends on the nature of the data and the problem at hand. Some commonly used methods include:
+
+Mean/Median/Mode Imputation:
+For numerical features, missing values can be replaced with the mean, median, or mode of the non-missing values in that column. Mean imputation is sensitive to outliers, while median imputation is more robust in the presence of outliers.
+
+Forward Fill (or Backward Fill) Imputation:
+This method is used for time series or sequential data. Missing values are filled using the last (forward fill) or next (backward fill) known value in the series.
+
+Random Imputation:
+Missing values are replaced with randomly selected values from the observed values in that column. This method can help introduce randomness into the imputed values and avoid potential biases.
+
+Hot-Deck Imputation:
+Missing values are imputed using similar records from the same dataset based on some criteria (e.g., Euclidean distance between records).
+
+Interpolation:
+For time series or ordered data, missing values can be estimated based on interpolation techniques like linear interpolation, cubic spline, or polynomial interpolation.
+
+K-Nearest Neighbors (KNN) Imputation:
+For numerical data, missing values can be imputed based on the values of k-nearest neighbors in the feature space.
+
+Multiple Imputation:
+This involves creating multiple imputations for missing values, which leads to multiple datasets. Models are then trained on each dataset, and the results are combined to obtain a final prediction.
+
+Using Machine Learning Models:
+Missing values can be imputed using machine learning algorithms. For example, a regression model can be used to predict missing numerical values, and a classifier can be used to predict missing categorical values.
